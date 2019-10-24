@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutomatedInstallation langpack="eng">
+<panels.SymmetricHelloPanel id="panels.SymmetricHelloPanel_0"/>
+<com.izforge.izpack.panels.userinput.UserInputPanel id="user.panel.setup">
+<entry key="select.install.upgrade" value="true"/>
+</com.izforge.izpack.panels.userinput.UserInputPanel>
+<com.izforge.izpack.panels.htmllicence.HTMLLicencePanel id="HTMLLicencePanel_2"/>
+<panels.SymmetricTargetPanel id="panels.SymmetricTargetPanel_3">
+<installpath>/opt/symmetric-ds</installpath>
+</panels.SymmetricTargetPanel>
+<com.izforge.izpack.panels.packs.PacksPanel id="PacksPanel_4">
+<pack index="0" name="Main Installation" selected="true"/>
+<pack index="1" name="Server Libraries" selected="true"/>
+<pack index="2" name="Required Libraries" selected="true"/>
+<pack index="3" name="Android Libraries" selected="true"/>
+<pack index="4" name="Documentation" selected="true"/>
+</com.izforge.izpack.panels.packs.PacksPanel>
+<com.izforge.izpack.panels.userinput.UserInputPanel id="user.panel.service">
+<entry key="select.run.server" value="true"/>
+<entry key="select.install.service" value="false"/>
+</com.izforge.izpack.panels.userinput.UserInputPanel>
+<com.izforge.izpack.panels.userinput.UserInputPanel id="user.panel.PortConfig">
+<entry key="select.install.httpPort" value="31415"/>
+<entry key="select.install.jmxRmiPort" value="31418"/>
+<entry key="select.install.jmxAgentEnabled" value="true"/>
+<entry key="select.install.httpEnabled" value="true"/>
+<entry key="select.install.jmxPort" value="31416"/>
+<entry key="select.install.jmxEnabled" value="false"/>
+<entry key="select.install.httpsEnabled" value="true"/>
+<entry key="select.install.jmxAgentPort" value="31418"/>
+<entry key="select.install.httpsPort" value="31417"/>
+<entry key="select.install.jmxRmiEnabled" value="false"/>
+</com.izforge.izpack.panels.userinput.UserInputPanel>
+<com.izforge.izpack.panels.userinput.UserInputPanel id="user.panel.memory">
+<entry key="select.memory" value="1024"/>
+</com.izforge.izpack.panels.userinput.UserInputPanel>
+<com.izforge.izpack.panels.userinput.UserInputPanel id="user.panel.staging">
+<entry key="select.staging.directory" value="tmp"/>
+<entry key="select.staging.encrypt" value="false"/>
+<entry key="select.staging.compress" value="true"/>
+</com.izforge.izpack.panels.userinput.UserInputPanel>
+<com.izforge.izpack.panels.summary.SummaryPanel id="SummaryPanel_9"/>
+<com.izforge.izpack.panels.install.InstallPanel id="InstallPanel_10"/>
+<com.izforge.izpack.panels.shortcut.ShortcutPanel id="ShortcutPanel_11">
+<createMenuShortcuts>false</createMenuShortcuts>
+<programGroup>SymmetricDS-Pro</programGroup>
+<createDesktopShortcuts>false</createDesktopShortcuts>
+<createStartupShortcuts>false</createStartupShortcuts>
+<shortcutType>all</shortcutType>
+</com.izforge.izpack.panels.shortcut.ShortcutPanel>
+<com.izforge.izpack.panels.process.ProcessPanel id="ProcessPanel_12"/>
+<panels.SymmetricFinishPanel id="panels.SymmetricFinishPanel_13"/>
+</AutomatedInstallation>
